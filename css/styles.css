@@ -1,0 +1,141 @@
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #e2e4de;
+    color: rgb(2, 105, 150);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(27, 179, 135);
+    color: rgb(8, 1, 41);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 0%;
+}
+
+h1::first-letter{
+    content:icon;
+    color: #980404;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - 50px);
+    margin-top: 100px;
+
+
+}
+
+section {
+    margin: 5px;
+    background-color: rgb(1, 17, 37);
+}
+
+#hello {
+    background-color: white;
+    color: rgb(51, 22, 140);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: #e2e4de;
+    border-radius: 5px;
+    background-color: #0f0e0e;
+    cursor: pointer;
+    color: white;
+    border-style: groove;
+    
+}
+
+button:hover {
+    background-color: #747bb9;
+}
+
+button:active {
+    background-color: #d3d3d3;
+}
+
+
+button[value="="] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="="]:hover {
+    background-color: #747bb9;
+}
+
+button[value="="]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="0"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="0"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="0"]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="5"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="5"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="5"]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="*"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="*"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="*"]:active {
+    background-color: #d3d3d3;
+}
+
+
+span {
+    display: inline;
+}
+
+span span {
+    font-size: 12px;
+}
