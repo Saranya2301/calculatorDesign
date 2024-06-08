@@ -1,0 +1,258 @@
+/* This is an example of universal selector */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* This is an example of element selector */
+body {
+    background-color: #e2e4de;
+    color: rgb(2, 105, 150);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - 50px);
+    margin-top: 100px;
+        
+}
+
+section {
+    margin: 5px;
+    background-color: rgb(2, 20, 42);
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: #e2e4de;
+    border-radius: 5px;
+    background-color: #0f0e0e;
+    cursor: pointer;
+    color: white;
+    border-style: groove;
+    
+}
+
+/* This is an example of class selector */
+.one{
+    color: goldenrod;
+    background-color: #980404;
+    font: bold;
+}
+
+.red{
+    background-color: blueviolet;
+    color: brown;
+    font-family: fantasy;
+}
+
+.green{
+    background-color: #980404;
+    color: #747bb9;
+    font-family: fantasy;
+}
+
+/* This is an example of ID selector */
+#hello {
+    background-color: white;
+    color: rgb(51, 22, 140);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+
+#mon{
+    background-color: green;
+    
+}
+
+#apple{
+    background-color: deepskyblue;
+    color: #980404;
+    font-family: fantasy;
+}
+
+#grapes{
+    background-color: darkolivegreen;
+    color: brown;
+    font-family: fantasy;
+    }
+
+/* This is an example of descendant selector */
+section span{
+    font-size: 20px;
+    display: inline;
+
+}
+
+body h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 0%;
+}
+
+main #berry{
+    background-color: darkkhaki;
+    color: #980404;
+    font-family: fantasy;
+}
+
+section #cho{
+    background-color: lightseagreen;
+    color: chocolate;
+    font-family: fantasy;
+}
+
+/* This is an example of child selector */
+#new > button{
+    font-size:xx-large;
+    color:chartreuse;
+    font: bolder;
+}
+
+body > header {
+    background-color: rgb(27, 179, 135);
+    color: rgb(8, 1, 41);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+section > #tue{
+    background-color: hotpink;
+}
+
+/* This is an example of adjacent sibling selector */
+.next + .sibling{
+    background-color: coral;
+    font-size: 10px;
+}
+
+#for + #no{
+    background-color: orangered;
+    font-family: fantasy;
+}
+
+.orange + .yellow{
+    background-color: chartreuse;
+    color: #980404;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+/* This is an example of general sibling selector */
+#new ~ .final{
+    background-color: gold;
+}
+
+#aa ~ #cc{
+    background-color: darkmagenta;
+    color: #980404;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+.red ~ .orange{
+    background-color: coral;
+    color: maroon;
+    font-size: x-large;
+    font-family:fantasy;
+}
+
+/* This is an example of group selector */
+.one, #hello, span{
+    font-family: fantasy;
+}
+
+/* This is an example of attribute selector */
+button[value="="] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="√"] {
+    background-color: #980404;
+    color: aquamarine;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+/* This is an example of pseudoelement selector */
+h1::first-letter{
+    content:icon;
+    color: #980404;
+}
+
+.divide::first-letter{
+    color: darkgoldenrod;
+    background-color: aqua;
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+/* This is an example of pseudoclass selector */
+button:hover {
+    background-color: #747bb9;
+}
+
+button:active {
+    background-color: #d3d3d3;
+}
+
+button[value="="]:hover {
+    background-color: #747bb9;
+}
+
+button[value="="]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="0"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="0"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="0"]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="5"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="5"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="5"]:active {
+    background-color: #d3d3d3;
+}
+
+button[value="*"] {
+    background-color: #241a5f;
+    color: #fff;
+}
+
+button[value="*"]:hover {
+    background-color: #747bb9;
+}
+
+button[value="*"]:active {
+    background-color: #d3d3d3;
+}
+

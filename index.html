@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Standard Calculator</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Standard Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <section id="hello">
+                <strong>Result: </strong><input type="text" id="result" readonly="0">
+            </section>
+            <section>
+                <section id="mon">
+                    <button onclick="appendToDisplay('%')" id="apple">%</button>
+                    <button onclick="clearEntry()" id="grapes">C/E</button>
+                    <button onclick="clearDisplay()" id="berry">C</button>
+                    <button onclick="backspace()" id="cho">&larr;</button>
+                </section>
+                <section id="tue">
+                    <button onclick="appendToDisplay('1/x')" class="one"><span>1/x</span></button>
+                    <button onclick="appendToDisplay('x^2')">x<span>2</span></button>
+                    <button onclick="appendToDisplay('√')">√</button>
+                    <button onclick="appendToDisplay('/')" class="divide">÷</button>
+                </section>
+                <section id="new">
+                    <button onclick="appendToDisplay('7')" id="ee">7</button>
+                    <button onclick="appendToDisplay('8')" id="for">8</button>
+                    <button onclick="appendToDisplay('9')" id="no">9</button>
+                    <button onclick="appendToDisplay('*')">×</button>
+                </section>
+                <section class="next">
+                    <button onclick="appendToDisplay('4')" id="aa">4</button>
+                    <button onclick="appendToDisplay('5')" id="bb">5</button>
+                    <button onclick="appendToDisplay('6')" id="cc">6</button>
+                    <button onclick="appendToDisplay('-')" id="dd">-</button>
+                </section>
+                <section class="sibling">
+                    <button onclick="appendToDisplay('1')" class="red">1</button>
+                    <button onclick="appendToDisplay('2')" class="green">2</button>
+                    <button onclick="appendToDisplay('3')" class="orange">3</button>
+                    <button onclick="appendToDisplay('+')" class="yellow">+</button>
+                </section>
+                <section class="final">
+                    <button onclick="toggleSign()">-/+</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculateResult()">=</button>
+                </section>
+            </section>
+        </section>
+    </main>
+
+</body>
+
+</html>
